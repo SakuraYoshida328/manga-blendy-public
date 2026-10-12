@@ -1,0 +1,7 @@
+{% extends 'base.html' %}{% block content %}
+<section class="hero"><p class="eyebrow">MANGA BACKGROUND REFERENCE</p><h1>一枚から、背景の設定資料集へ。</h1><p>空間と小物を記録し、同じ場所を別の角度から確認できます。元画像は保管し、細部の根拠を残します。</p><a class="button" href="/new">画像から資料を作る</a></section>
+<p><a href="/setup">初回導入・Blender／MCP接続診断</a> · <a href="/capabilities">現在利用できる機能</a></p>
+<section><h2>資料集</h2><div class="cards">{% for p in projects %}<a class="card" href="/projects/{{ p.project_id }}"><h3>{{ p.title }}</h3><p>{{ '採用済み' if p.active_revision_id else '作成中' }}</p><small>{{ p.created_at }}</small></a>{% else %}<p class="muted">資料集はまだありません。画像を一枚選んで始めましょう。</p>{% endfor %}</div></section>
+<details class="panel"><summary>初期設定・接続状況</summary><p>Blender: {{ blender_status }}</p><p>画像解析はCodex/ChatGPTで行い、元画像と解析JSONを取り込みます。APIキー・別課金APIは使用しません。資料集の閲覧ではBlenderを起動しません。</p><form method="post" action="/settings"><input type="hidden" name="token" value="{{ token }}"><label>Blender 5.2実行ファイル<input name="blender_path" value="{{ config.blender_path }}" required></label><button>設定を保存</button></form></details>
+<details class="panel"><summary>保存した資料集を読み込む</summary><form action="/import" method="post" enctype="multipart/form-data"><input type="hidden" name="token" value="{{ token }}"><label>書き出したZIP<input type="file" name="archive" accept=".zip" required></label><button>読み込む</button></form></details>
+{% endblock %}

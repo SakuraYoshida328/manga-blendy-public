@@ -1,0 +1,10 @@
+{% extends 'base.html' %}{% block content %}
+<h1>初回導入と接続診断</h1>
+<form action="/setup" method="post" class="panel"><input type="hidden" name="token" value="{{ token }}">
+<label>利用方式<select name="operation_mode"><option value="chatgpt_plan">ChatGPT利用枠：Codex／ChatGPTで解析・編集して取込</option><option disabled>OpenAI API：別課金のため今回の実装では無効</option></select></label>
+<p>方式を勝手に切り替えません。APIキーは不要です。利用枠がなくなれば外部AI処理を停止し、保存した資料を使います。本体へのPlus自動解析と画像生成は未対応です。</p>
+<label>Blender 5.2実行ファイル<input id="setup-blender" name="blender_path" value="{{ config.blender_path }}" required></label>
+<button type="button" id="setup-diagnose">Blender・既存MCPの接続を確認</button><pre id="setup-result"></pre><button>この利用方式とパスを保存</button></form>
+<section class="panel"><h2>Blender・MCPを準備する</h2><ol><li>Blender未導入の場合は<a href="https://www.blender.org/download/" target="_blank" rel="noreferrer">公式配布元</a>から5.2を手動で導入し、上の実行ファイルを指定します。</li><li>既存のBlender MCPアドオンを有効にし、アドオンの接続サーバーを起動します。</li><li>127.0.0.1:9876を待ち受ける設定にして、上の接続確認を実行します。</li><li>新しい背景を出すときだけMCP接続が必要です。閲覧・保存画像の利用では起動しません。</li></ol><p>アプリはBlenderやMCPを自動インストールしません。未導入の環境では同梱の導入手順を参照してください。</p></section>
+<section class="panel"><h2>AI機能の現在の範囲</h2><p>解析は元画像と観測JSON、仕上げは構造PNGと画風参照の受け渡し方式です。仕上げZIPには固定指示とカメラ・部品情報が入り、過去の会話履歴を使わず同じ入力を渡せます。</p><p>同梱の「ChatGPTログイン.cmd」は従来のログイン・モデル一覧の接続試験です。ログイン成功だけでは画像編集が実行可能になりません。<a href="https://developers.openai.com/siwc/token-sharing-open-source/preview-limitations" target="_blank" rel="noreferrer">公式の利用範囲</a>を確認できます。</p></section>
+{% endblock %}

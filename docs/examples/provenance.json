@@ -1,0 +1,62 @@
+{
+  "source": "tests/fixtures.py:room_fixture; scripts/create_demo.py",
+  "blender": "5.2.0 LTS",
+  "real_ai": false,
+  "external_assets": false,
+  "private_materials": false,
+  "reference": "fresh hand-defined procedural room, not any user photo",
+  "object_count": 15,
+  "records": [
+    {
+      "file": "source.png",
+      "resolution": [
+        640,
+        480
+      ],
+      "sha256": "0303a24a50377ae2fc328115ec1cea5eec4462d767573ee2a57745276e1c0350",
+      "pipeline": "procedural_blender_worker",
+      "camera_id": "source"
+    },
+    {
+      "file": "left.png",
+      "resolution": [
+        640,
+        480
+      ],
+      "sha256": "73fc7160609701614c60f54a3e42325c208fcc961fd32fcd81f314812b424294",
+      "pipeline": "procedural_blender_worker",
+      "camera_id": "left"
+    },
+    {
+      "file": "right.png",
+      "resolution": [
+        640,
+        480
+      ],
+      "sha256": "cece2612d7785a7193b51618e65925904e901e858216a3e97943665a0721f3d2",
+      "pipeline": "procedural_blender_worker",
+      "camera_id": "right"
+    },
+    {
+      "file": "high.png",
+      "resolution": [
+        640,
+        480
+      ],
+      "sha256": "dd4f5ca0720b43e7e414ab51e24a20700cfce6d620182d3d465536b4ec7c467b",
+      "pipeline": "procedural_blender_worker",
+      "camera_id": "high"
+    },
+    {
+      "file": "mcp-balanced.png",
+      "resolution": [
+        320,
+        240
+      ],
+      "sha256": "f26df47dc47b39ae5fa086e0080f9513fd9815bb33ab0516c9bf034c09c14d98",
+      "pipeline": "saved_blender_mcp_direct",
+      "camera_id": "source",
+      "focus_mode": "balanced"
+    }
+  ]
+}

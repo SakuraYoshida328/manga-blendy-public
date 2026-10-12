@@ -1,0 +1,2 @@
+# Preserve release hashes and UTF-8 BOM across Windows and other checkouts.
+* -text

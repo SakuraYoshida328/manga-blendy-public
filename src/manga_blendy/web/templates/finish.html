@@ -1,0 +1,20 @@
+{% extends 'base.html' %}{% block content %}
+<div id="finish" data-project="{{ manifest.project_id }}" data-job="{{ jid }}">
+<h1>{{ manifest.title }}：二段階仕上げ試験</h1>
+<p>3D画像が配置・構図の基準、正式マスターが画風・質感の参照です。仕上げ候補は原画像・3D・正式マスターを置き換えません。</p>
+{% set prefix='/projects/' ~ manifest.project_id ~ '/file/jobs/' ~ jid ~ '/output/finish/' %}
+<div class="gallery"><figure><img src="{{ prefix }}style_reference.png" alt="画風参照"><figcaption>画風参照（配置には使用しない）</figcaption></figure><figure><img src="{{ prefix }}stage1.png" alt="構造基準"><figcaption>第1段階：構造・カメラの基準</figcaption></figure></div>
+<section class="panel"><h2>仕上げへの受け渡し</h2><p>現在のアプリは画像編集を自動実行しません。上の2枚と編集指示をCodexへ渡し、利用枠内で作ったPNGを下から取り込めます。利用枠終了時は追加試行せず、保存した構造画像を使います。APIキーは不要です。</p>
+<p><a href="{{ prefix }}request.json">入力・カメラ・状態・ハッシュの記録</a> · <a href="{{ prefix }}edit_prompt.txt">編集指示</a></p>
+<p><a class="button" href="/projects/{{ manifest.project_id }}/jobs/{{ jid }}/finish/handoff">構造画像・画風参照・指示をZIPで渡す</a></p>
+<label>仕上げ候補PNG<input id="finish-image" type="file" accept="image/png"></label>
+<label>処理方法<select id="finish-provider"><option value="codex_builtin">Codexの画像編集</option><option value="chatgpt_manual">ChatGPTで手動編集</option><option value="local_edit">ローカル画像処理</option></select></label>
+<label>実際に確認できたモデル表示名（不明ならunknown）<input id="finish-model" value="unknown" maxlength="80"></label><button id="finish-import">候補として取り込む</button></section>
+{% for c in candidates %}<section class="panel"><h2>仕上げ候補：{{ c.status }}</h2><figure><img src="{{ prefix }}{{ c.image }}" alt="第2段階の候補" style="max-width:100%"><figcaption>第2段階 / {{ c.provider }} / {{ c.model_label }}</figcaption></figure>
+<p>自動検査：{{ '通過' if c.screen.passed else '不通過' }}。{{ c.screen.limitation or c.screen.reasons }}</p>
+<p>輪郭の簡易検査だけでは物体数や材質を保証できません。比較して全項目を確認してください。</p>
+{% for key,label in checks.items() %}<label class="check"><input type="checkbox" data-check="{{ key }}" {% if c.review and c.review.structure.get(key) %}checked{% endif %}>{{ label }}</label>{% endfor %}
+<label class="check"><input type="checkbox" data-appearance {% if c.review and c.review.appearance_approved %}checked{% endif %}>布・木材・壁・線・トーンが漫画背景として使える</label><label>判断メモ<textarea maxlength="2000">{{ c.review.notes if c.review else '' }}</textarea></label>
+<button data-finish-review="{{ c.candidate_id }}" {% if not c.screen.passed or c.status=='approved_output' %}disabled{% endif %}>{{ 'この出力は承認済み' if c.status=='approved_output' else 'この出力の確認結果を記録' }}</button>
+<p class="muted">未確認の項目がある場合は不採用になります。この確認は1枚の出力にだけ適用し、正式マスターやアプリ全体のモデル・生成方式は変更しません。</p></section>{% endfor %}
+</div>{% endblock %}

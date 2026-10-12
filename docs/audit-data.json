@@ -1,0 +1,33 @@
+{
+  "version": "v0.1.0-beta.1",
+  "public_repository_created": false,
+  "release_published": false,
+  "runtime_files_unchanged": 38,
+  "runtime_version_only_changes": 1,
+  "protected_existing_data_files_unchanged": 662,
+  "candidate_files_scanned": 151,
+  "secrets_or_private_paths_found": 0,
+  "allowed_procedural_pngs": 5,
+  "dependency_license_inventory_packages": 40,
+  "local_doc_links_checked": 35,
+  "powershell_doc_blocks": 19,
+  "application_tests": {
+    "passed": 72,
+    "skipped_opt_in": 2,
+    "warnings": 1
+  },
+  "auth_offline_tests": {
+    "passed": 15,
+    "live_login_performed": false,
+    "inference_requests": 0
+  },
+  "clean_venv_install": true,
+  "procedural_four_views_and_blend": true,
+  "packet_zip_reopen": true,
+  "mcp_single_view_geometry_preserved": true,
+  "powershell_51_launch": true,
+  "other_windows_pc_tested": false,
+  "python314_runtime_tested": false,
+  "github_anonymous_download_tested": false,
+  "github_issue_ui_tested": false
+}

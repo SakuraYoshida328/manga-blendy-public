@@ -1,0 +1,1 @@
+{% extends 'base.html' %}{% block content %}<h1>{{ manifest.title }}</h1><p>採用された資料はまだありません。</p>{% for j in jobs %}<p><a href="/projects/{{ manifest.project_id }}/jobs/{{ j.job_id }}">{{ j.created_at }} — {{ j.status }}</a></p>{% endfor %}{% endblock %}

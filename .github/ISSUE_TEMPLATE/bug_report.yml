@@ -1,0 +1,87 @@
+{
+  "name": "不具合報告",
+  "description": "同梱サンプルでの再現を優先してください",
+  "title": "[Bug] ",
+  "body": [
+    {
+      "type": "markdown",
+      "attributes": {
+        "value": "公開Issueです。原稿・私的画像・個人用パス・認証URL・トークン・config.json・ログ全文を添付しないでください。"
+      }
+    },
+    {
+      "type": "input",
+      "id": "version",
+      "attributes": {
+        "label": "MBの版・取得方法",
+        "placeholder": "v0.1.0-beta.1 / Releases ZIP またはコミット"
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "environment",
+      "attributes": {
+        "label": "環境（ユーザー名や端末識別番号は不要）",
+        "description": "Windows、Python、PowerShell、Blender、固定MCPの版、RAM・GPUを書いてください"
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "dropdown",
+      "id": "stage",
+      "attributes": {
+        "label": "止まった工程",
+        "options": [
+          "取得・セットアップ",
+          "Web起動",
+          "Blender・MCP診断",
+          "合成サンプル",
+          "ChatGPTモデル一覧試験",
+          "解析JSON取込",
+          "背景出力・外部仕上げ",
+          "保存・資料ZIP再読込み"
+        ]
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "steps",
+      "attributes": {
+        "label": "再現手順、期待結果、実際の結果",
+        "description": "同梱サンプルで再現するか、最小の手順を書いてください"
+      },
+      "validations": {
+        "required": true
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "error",
+      "attributes": {
+        "label": "秘匿値を除いた最小のエラーコード・行",
+        "render": "text"
+      }
+    },
+    {
+      "type": "checkboxes",
+      "id": "privacy",
+      "attributes": {
+        "label": "投稿前の確認",
+        "options": [
+          {
+            "label": "原稿、個人画像、個人用パス、認証情報、ログ全文を含めていません",
+            "required": true
+          }
+        ]
+      }
+    }
+  ]
+}

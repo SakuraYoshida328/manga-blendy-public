@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "manga-blendy"
+version = "0.1.0b1"
+license = {file = "LICENSE"}
+description = "Versioned manga background reference packets from one image"
+requires-python = ">=3.12"
+dependencies = ["fastapi", "uvicorn", "jinja2", "python-multipart", "pydantic>=2", "httpx", "pillow", "numpy", "scipy", "filelock", "psutil"]
+
+[project.scripts]
+manga-blendy = "manga_blendy.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+manga_blendy = ["web/templates/*.html", "web/static/*", "blender_worker/*.py"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
