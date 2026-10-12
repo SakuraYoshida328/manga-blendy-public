@@ -80,8 +80,8 @@
     },
     {
       "path": "docs/PUBLIC_BETA_AUDIT.md",
-      "sha256": "df36f8470915bc9eb04d0abac462569b426f1cfdaea05e1934cb0549343849f0",
-      "bytes": 5156
+      "sha256": "b2cdce0e2ae3b207adef28fde0319d1883c82c05c7e294b79818e3e2dea6f58f",
+      "bytes": 5297
     },
     {
       "path": "docs/PUBLISH_CHECKLIST.md",
@@ -95,7 +95,7 @@
     },
     {
       "path": "docs/audit-data.json",
-      "sha256": "9ed243c6f7aa4a6ffa6f1746ad2e463730d0c1485bbcf6ec6264cd430d0c1814",
+      "sha256": "f11d8d22aeed8aa0961e14c025aa67eb79c93f5640d07c8c0666120685e1eef5",
       "bytes": 1006
     },
     {
