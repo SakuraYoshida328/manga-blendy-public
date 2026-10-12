@@ -6,7 +6,7 @@
 
 | 症状 | 原因確認と対処 |
 | --- | --- |
-| GitHubで404／Repository not found | 公開URLとReleaseの公開状況、URLの綴りを確認。準備中の候補はまだ取得できない。公開版に招待は不要。明示指定されたPrivate版だけ本人の権限を確認 |
+| GitHubで404／Repository not found | 公開URLとReleaseの公開状況、URLの綴りを確認。接続エラーや取得直後の一時的な反映遅延も確認。公開版に招待は不要。明示指定されたPrivate版だけ本人の権限を確認 |
 | Git認証失敗 | 公開版は認証不要。公開URLを確認する。Private版を明示指定された場合だけGCMのブラウザ本人認証を使い、パスワード・PATをチャットへ貼らない |
 | gitが見つからない | 許可後にGit公式から導入するか、公開ReleasesからZIP取得 |
 | pythonがStoreを開く／pyがない | 実行エイリアスを使わず、実際のPython.exeを確認。必要なら公式Pythonの導入を提案 |

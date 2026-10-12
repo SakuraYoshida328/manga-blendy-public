@@ -1,6 +1,6 @@
-# 一般公開ベータ候補の監査
+# 一般公開ベータの公開前監査記録
 
-対象 `v0.1.0-beta.1`、2026-10-12。**判定：機能制限と未検証を明記したソース配布ベータとして、条件付きで公開準備可能。公開は未実施。** 所有者による公開先・ライセンス・権利・候補内容の最終承認が必要です。
+対象 `v0.1.0-beta.1`、2026-10-12。**判定：機能制限と未検証を明記したソース配布ベータとして公開可能。** 所有者が公開候補を確認し、同日に公開を承認しました。[配布ページ](https://github.com/SakuraYoshida328/manga-blendy-public/releases/tag/v0.1.0-beta.1)。本書とaudit-data.jsonは公開前の検証記録で、公開前に未実施だったGitHub確認の結果はRelease本文に記録します。
 
 ## 分離と保全
 
@@ -12,7 +12,7 @@
 
 ## ライセンス
 
-GPL-3.0-or-later案。Blender公式のbpy公開スクリプト方針に合わせた提案です。MCPは検証した固定コミットのMIT原文と著作権表記を保存。通常31依存・任意認証4依存に加え、検証Blender内のrequests関連5配布物のメタデータと原文を記録しています。Blender／MCP／Python／wheelは同梱しません。[THIRD_PARTY_NOTICES.md](../THIRD_PARTY_NOTICES.md) を参照。
+GPL-3.0-or-later。Blender公式のbpy公開スクリプト方針を踏まえ、所有者が承認したライセンスです。MCPは検証した固定コミットのMIT原文と著作権表記を保存。通常31依存・任意認証4依存に加え、検証Blender内のrequests関連5配布物のメタデータと原文を記録しています。Blender／MCP／Python／wheelは同梱しません。[THIRD_PARTY_NOTICES.md](../THIRD_PARTY_NOTICES.md) を参照。
 
 ## この端末で行った検証
 
@@ -29,7 +29,7 @@ GPL-3.0-or-later案。Blender公式のbpy公開スクリプト方針に合わせ
 
 制限された実行環境ではlocalhost通信が拒否され、認証テストと本体テストを再実行しました。Web検証ハーネスの出力パイプ待ちも修正して再試験しました。ローカルGitの個別オブジェクト書込みも拒否され、一括登録で独立履歴を保存しました。これらは製品コードの変更理由にはしていません。試験用プロセスだけを終了し、認証・AI推論・画像生成による利用枠消費はありません。
 
-## 実機未検証・公開後に確認する項目
+## 公開前の時点で実機未検証だった項目
 
 - 別Windows PCの空OS環境。Python／Git／PowerShell／Blender公式ZIPの新規導入、MCPの新規GUI導入とrequests不足時の追加導入。
 - Python 3.14でのアプリ実行。固定依存解決のみ確認済み。Windows 10、ARM64、最低スペックPC、他Blender版。
@@ -43,4 +43,4 @@ GPL-3.0-or-later案。Blender公式のbpy公開スクリプト方針に合わせ
 
 上記を説明せず「画像1枚で完成漫画背景を全自動生成するアプリ」と紹介する準備はできていません。導入支援・設定資料化・構造再利用・外部仕上げ連携を試す公開ベータとして紹介してください。
 
-最終公開作業は [PUBLISH_CHECKLIST.md](PUBLISH_CHECKLIST.md) に従い、所有者承認後だけ実施します。
+公開作業は [PUBLISH_CHECKLIST.md](PUBLISH_CHECKLIST.md) に沿って、所有者の承認を受けた範囲で実施します。別PCの未検証項目は公開後もそのまま実機未検証です。

@@ -29,5 +29,8 @@
   "other_windows_pc_tested": false,
   "python314_runtime_tested": false,
   "github_anonymous_download_tested": false,
-  "github_issue_ui_tested": false
+  "github_issue_ui_tested": false,
+  "record_scope": "prepublication_validation_snapshot",
+  "owner_publication_approved": true,
+  "public_repository_url": "https://github.com/SakuraYoshida328/manga-blendy-public"
 }

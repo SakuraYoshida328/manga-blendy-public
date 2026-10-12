@@ -50,13 +50,13 @@
     },
     {
       "path": "README.md",
-      "sha256": "6b5c04184773b6afff26b73a22e8a43dd0f757d83c4b9341fdee338a47da6088",
-      "bytes": 8267
+      "sha256": "7431fcc621040edddb7bbc132470f5b2702f2706f197ec2926c29f54db85a1c7",
+      "bytes": 8518
     },
     {
       "path": "RELEASE_NOTES.md",
-      "sha256": "9af34ec819349b03e1775dfc352fa4b203017b3d01fb8978fb7994bb12748b58",
-      "bytes": 1481
+      "sha256": "6fed79a524b7660d7a0aaba7ef3961e7929ada453a260ddaf07ce90e21d22059",
+      "bytes": 1581
     },
     {
       "path": "SECURITY.md",
@@ -65,8 +65,8 @@
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
-      "sha256": "3537bd008ad9eeaa2a0f4dd3c7b10de107e2dd8d5db7a54354988c743c36a5ae",
-      "bytes": 4235
+      "sha256": "0d26c69c84e8e79b4582fbcc353562e42f9e7a7c27a2353b06be35e4dc0b201d",
+      "bytes": 4212
     },
     {
       "path": "docs/AI-capabilities.md",
@@ -75,28 +75,28 @@
     },
     {
       "path": "docs/INSTALL_WITH_CODEX.md",
-      "sha256": "2b6892bba660fac5ac61c64322038723437e35680e20aeb53bda455805d0f91c",
-      "bytes": 24440
+      "sha256": "e19c431acd0c3c047f32860619b3f84414c2cf7586443c30518903815bb8f553",
+      "bytes": 24633
     },
     {
       "path": "docs/PUBLIC_BETA_AUDIT.md",
-      "sha256": "b2cdce0e2ae3b207adef28fde0319d1883c82c05c7e294b79818e3e2dea6f58f",
-      "bytes": 5297
+      "sha256": "fa5bb9b69e843fb910cd782c621a2d95722e2881c1abf908558a97e14f473d0a",
+      "bytes": 5605
     },
     {
       "path": "docs/PUBLISH_CHECKLIST.md",
-      "sha256": "f5cabcd334ecf0890290068e6b42d9e466e4e29657326ce8a00bc8dd273ca0d4",
-      "bytes": 3531
+      "sha256": "510b499a6c04866de6ed627ca55309800abb8c58e279fe384b1a65738ac32d93",
+      "bytes": 3663
     },
     {
       "path": "docs/TROUBLESHOOTING.md",
-      "sha256": "3ce2a5166914d54b794fabdfc692bff15b6af142f5a0de2331257c967d94534f",
-      "bytes": 9890
+      "sha256": "596872b4871a54fd483356dde78a53a1e803b26e357a6a0d592063b023ec8bb4",
+      "bytes": 9911
     },
     {
       "path": "docs/audit-data.json",
-      "sha256": "f11d8d22aeed8aa0961e14c025aa67eb79c93f5640d07c8c0666120685e1eef5",
-      "bytes": 1006
+      "sha256": "bbf5bac8707185a234ba63e02944860ab73524fe5a1f04f71723ba60c03d809f",
+      "bytes": 1189
     },
     {
       "path": "docs/examples/README.md",
@@ -135,8 +135,8 @@
     },
     {
       "path": "docs/getting-started.md",
-      "sha256": "93e00ac52a7d6c2103d8e9a6c7a8671c7f27a364989fdfb073139df464c42abb",
-      "bytes": 13614
+      "sha256": "e1c3c8990af3319d81386366c69ffdc0ab4a5ab58d8698a5510c29dcb94d74fa",
+      "bytes": 13728
     },
     {
       "path": "docs/integration-interface.md",

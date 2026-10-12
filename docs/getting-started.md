@@ -22,7 +22,7 @@ PowerShell 7は [Microsoft公式](https://learn.microsoft.com/en-us/powershell/s
 
 ## 3. アプリの取得
 
-一般公開後は公開リポジトリのReleasesから `manga-blendy-v0.1.0-beta.1-windows-source.zip` と `SHA256SUMS.txt` を取得できます。招待・GitHubログインは不要です。この候補の準備段階ではまだ公開していません。
+[一般公開Releases](https://github.com/SakuraYoshida328/manga-blendy-public/releases/tag/v0.1.0-beta.1)から `manga-blendy-v0.1.0-beta.1-windows-source.zip` と `SHA256SUMS.txt` を取得できます。招待・GitHubログインは不要です。公開リポジトリとReleasesから取得できます。
 
 Codexに公開URLを渡すと、INSTALL_WITH_CODEX.mdの工程2に従い、ハッシュを確認して新しい空フォルダへ展開します。Gitでのcloneも可能ですが、ZIP利用ならGitを追加導入する必要はありません。私的な開発リポジトリを取得先にしません。
 
@@ -134,4 +134,4 @@ pwsh -NoProfile -ExecutionPolicy Bypass -File .\scripts\start_chatgpt_probe.ps1
 
 ## 13. 更新と問い合わせ
 
-資料集ZIPを保存して、新版は別の空フォルダへ導入してください。古いprojectsやconfig.jsonを無断で消しません。不具合・要望は公開後のGitHub Issuesのフォームで報告できます。原稿や認証情報を貼らず、同梱サンプルで再現してください。
+資料集ZIPを保存して、新版は別の空フォルダへ導入してください。古いprojectsやconfig.jsonを無断で消しません。不具合・要望は[GitHub Issues](https://github.com/SakuraYoshida328/manga-blendy-public/issues/new/choose)のフォームで報告できます。原稿や認証情報を貼らず、同梱サンプルで再現してください。

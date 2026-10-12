@@ -6,11 +6,11 @@ v0.1.0-beta.1はソース配布です。Blender、MCPアドオン、Python、依
 
 Copyright (c) 2026 Manga Blendy contributors.
 
-本公開候補のソース・文書・合成作例はGPL-3.0-or-later案です。`LICENSE`は[GNU公式のGPL v3原文](https://www.gnu.org/licenses/gpl-3.0.txt)です。公開前に所有者が権利と採用ライセンスを承認します。著作権者名の最終表記も承認対象です。利用者の入力・生成作品のライセンスを自動変更しません。
+ソース・文書・合成作例はGPL-3.0-or-laterです。`LICENSE`は[GNU公式のGPL v3原文](https://www.gnu.org/licenses/gpl-3.0.txt)です。2026-10-12に、ライセンス案と著作権表記を含む候補について所有者の公開承認を受けました。利用者の入力・生成作品のライセンスを自動変更しません。
 
 ## Blender（別途導入）
 
-Blender Foundationと各貢献者による自由ソフトウェアです。Blenderバイナリの配布にはGPL-3.0-or-laterが適用されます。`bpy`を使う公開スクリプトはGPLに適合するライセンスが必要とされるため、本候補にもGPL-3.0-or-laterを提案しました。Blender自体や改変バイナリを再配布するパッケージは今回の範囲外です。[公式ライセンス説明](https://www.blender.org/about/license/)、[ソースコード取得](https://www.blender.org/download/source-code/) を参照してください。Blenderで作った作品の権利はソフトのGPLとは区別されます。
+Blender Foundationと各貢献者による自由ソフトウェアです。Blenderバイナリの配布にはGPL-3.0-or-laterが適用されます。`bpy`を使う公開スクリプトはGPLに適合するライセンスが必要とされるため、本配布版にもGPL-3.0-or-laterを採用しました。Blender自体や改変バイナリを再配布するパッケージは今回の範囲外です。[公式ライセンス説明](https://www.blender.org/about/license/)、[ソースコード取得](https://www.blender.org/download/source-code/) を参照してください。Blenderで作った作品の権利はソフトのGPLとは区別されます。
 
 ## MCP for Blender（別途取得）
 

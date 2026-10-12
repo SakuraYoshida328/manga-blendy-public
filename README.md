@@ -2,11 +2,11 @@
 
 Windows向けのローカル漫画背景設定資料アプリです。画像、空間構造、物体ID、参照画像、カメラ、場面ごとの状態を保存し、同じ背景を必要なコマだけ呼び出します。**簡略化が目的ではなく、繰り返し運用できることが目的**です。
 
-これは一般公開ベータ用の候補です。公開先とリリースは所有者の最終承認待ちです。公開後は誰でも取得でき、GitHubの招待・ログインは不要です。現時点ではダウンロードURLを公開済みとして案内しません。
+一般公開ベータ版です。[配布ページ](https://github.com/SakuraYoshida328/manga-blendy-public/releases/tag/v0.1.0-beta.1)から誰でも取得でき、GitHubの招待・ログインは不要です。ソース配布の試用版で、未実装のAI工程と実機未検証の項目を下記に明記しています。
 
 ## Codexで導入する
 
-公開後にこのリポジトリのURLをCodexへ渡し、次のように依頼してください。
+[この公開リポジトリ](https://github.com/SakuraYoshida328/manga-blendy-public)のURLをCodexへ渡し、次のように依頼してください。
 
 > このリポジトリの docs/INSTALL_WITH_CODEX.md を読んで、Manga Blendyをインストールしてください。PCを確認し、必要なBlender・MCPの導入と初回サンプル試験まで進めてください。インストール・重要設定の前に変更範囲をまとめて確認し、既存設定を保護してください。有料APIは使わないでください。
 
@@ -15,7 +15,7 @@ Windows向けのローカル漫画背景設定資料アプリです。画像、�
 - [よくあるエラー](docs/TROUBLESHOOTING.md)
 - [今回の検証範囲と公開監査](docs/PUBLIC_BETA_AUDIT.md)
 
-Releasesでは `manga-blendy-v0.1.0-beta.1-windows-source.zip` と `SHA256SUMS.txt` を配布する構成です。ソースを含むパッケージで、完成した単体EXEではありません。Python・Blender・MCPを別途導入します。ZIP利用ならGitは不要です。
+[v0.1.0-beta.1のReleases](https://github.com/SakuraYoshida328/manga-blendy-public/releases/tag/v0.1.0-beta.1)から `manga-blendy-v0.1.0-beta.1-windows-source.zip` と `SHA256SUMS.txt` を取得してください。ソースを含むパッケージで、完成した単体EXEではありません。Python・Blender・MCPを別途導入します。ZIP利用ならGitは不要です。
 
 ## 実装した機能
 
@@ -45,7 +45,7 @@ Releasesでは `manga-blendy-v0.1.0-beta.1-windows-source.zip` と `SHA256SUMS.t
 | --- | --- |
 | OS | Windows 11 x64。別PC、Windows 10、ARM64は実機未検証 |
 | Python | 3.12以上。3.12.14 x64で確認。新規候補3.14 x64は依存解決のみ確認、実行未検証 |
-| PowerShell | 7推奨。公開候補はPS1をUTF-8 BOM付きにし、標準5.1でも構文・起動を確認済み |
+| PowerShell | 7推奨。配布版はPS1をUTF-8 BOM付きにし、標準5.1でも構文・起動を確認済み |
 | Blender | 5.2、検証版5.2.0 LTS。別版の互換を保証しない |
 | MCP | 指定のBlender側アドオン1.8／protocol 13。固定コミット・SHAは導入手順参照 |
 | 検証PC | Core i7-10700、RAM 32GB、GeForce RTX 2070 SUPER、Windows 11 |
@@ -70,11 +70,11 @@ APIキー経路は無効です。APIの追加課金や有料クレジットに�
 
 資料は `projects/`、端末設定は `config.json`、試験記録は `.work/` に保存します。更新前に資料集ZIPを保存し、新版は別フォルダへ導入します。[保存・復元](docs/getting-started.md) に従ってください。
 
-公開後のGitHub Issuesには不具合／機能要望テンプレートを使います。原稿・個人画像・ユーザー名入りパス・トークンを送らず、同梱サンプルで再現してください。セキュリティ問題は [SECURITY.md](SECURITY.md) を参照してください。
+[GitHub Issues](https://github.com/SakuraYoshida328/manga-blendy-public/issues/new/choose)には不具合／機能要望テンプレートを使ってください。原稿・個人画像・ユーザー名入りパス・トークンを送らず、同梱サンプルで再現してください。セキュリティ問題は [SECURITY.md](SECURITY.md) を参照してください。
 
 ## ライセンス・設計資料
 
-公開候補のソース・文書・合成作例は **GPL-3.0-or-later案**です。所有者の権利確認と最終承認後に公開します。[LICENSE](LICENSE)、[第三者表記](THIRD_PARTY_NOTICES.md)、[依存一覧](DEPENDENCIES.json) を添付しています。Blender/MCPやPython依存の実行ファイルは同梱しません。利用者自身の画像・漫画・.blendの権利をアプリのライセンスへ自動変更しません。
+ソース・文書・合成作例は **GPL-3.0-or-later**です。所有者の公開承認を受けて配布しています。[LICENSE](LICENSE)、[第三者表記](THIRD_PARTY_NOTICES.md)、[依存一覧](DEPENDENCIES.json) を添付しています。Blender/MCPやPython依存の実行ファイルは同梱しません。利用者自身の画像・漫画・.blendの権利をアプリのライセンスへ自動変更しません。
 
 - [AI工程の実装境界](docs/AI-capabilities.md)
 - [CLI/APIによる外部連携](docs/integration-interface.md)

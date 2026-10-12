@@ -45,7 +45,7 @@ PowerShell 7を用意したらそのターミナルへ切り替える。以下�
 
 ## 2. 公開ベータの取得
 
-所有者の最終承認までは未公開です。公開後は、利用者が渡した実在する公開リポジトリURLを使います。Private開発リポジトリへ案内しません。招待・GitHub認証は不要です。取得が404ならURLと公開状況を確認して停止し、認証情報を要求しません。
+一般公開先は [https://github.com/SakuraYoshida328/manga-blendy-public](https://github.com/SakuraYoshida328/manga-blendy-public)、[配布Release](https://github.com/SakuraYoshida328/manga-blendy-public/releases/tag/v0.1.0-beta.1)です。利用者が渡したURLがこの公開リポジトリと一致するか確認します。Private開発リポジトリへ案内しません。招待・GitHub認証は不要です。取得が404ならURLと通信状況を確認して停止し、認証情報を要求しません。
 
 推奨はそのリポジトリのReleases → v0.1.0-beta.1 → `manga-blendy-v0.1.0-beta.1-windows-source.zip` と `SHA256SUMS.txt`。同じReleaseから取得したチェックサムと照合し、許可した新しい空の短いフォルダへ展開します。ソース形式なのでGitをインストールしなくても使えます。
 

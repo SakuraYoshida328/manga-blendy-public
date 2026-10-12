@@ -1,10 +1,10 @@
 # 所有者向け：公開前の確認とリリース手順
 
-この文書は将来の公開作業用です。今回の準備作業ではPublicリポジトリ作成、visibility変更、push、公開Releaseを実行しません。
+この文書は所有者向けのリリース手順です。v0.1.0-beta.1は2026-10-12に公開候補全体の最終承認を受けました。既存Private開発リポジトリを維持し、別Publicリポジトリへ配布します。次版の公開も所有者の承認を必要とします。
 
 ## 最終承認で確認すること
 
-1. 新規公開リポジトリの名前。候補は `manga-blendy-public`。既存のPrivate開発リポジトリは維持する。
+1. 新規公開リポジトリの名前。採用名は `manga-blendy-public`。既存のPrivate開発リポジトリは維持する。
 2. GPL-3.0-or-later案、著作権表記 `Manga Blendy contributors`、コード・文書・合成作例を公開する権利。第三者の原文表記を削除しない。
 3. READMEに記載した機能境界、対応環境、実機未検証、合成作例による紹介でよいこと。
 4. 配布ZIPとSHA256、PUBLIC_BETA_AUDIT.md、SOURCE_MANIFEST.jsonの確認。
